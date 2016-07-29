@@ -1,0 +1,225 @@
+/*
+Design by LibDesigner.com
+http://www.libdesigner.com
+Released for free under a Creative Commons Attribution 3.0 License
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Petit+Formal+Script);
+
+article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video{display:block}mark,rp,rt,ruby,summary,time{display:inline}
+/* Global properties ======================================================== */
+html {width:100%}
+
+/*layout----------------------------------------------------------*/
+.container_24 {margin-left:auto;margin-right:auto;width:960px}
+
+.grid_7,.grid_16{display:inline;float:left;position:relative;margin-left:5px;margin-right:5px;}
+
+.alpha{margin-left:0;}
+.omega{margin-right:0;}
+
+.container_24 .grid_16{width:630px;}
+.container_24 .grid_7{width:270px;}
+.container_24 .prefix_1{padding-left:40px;}
+
+/*rests ----------------------------------------------------------*/
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var{border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	background:;
+	font-size:100%;	margin:0;	padding:0;	outline:0;	vertical-align:top;
+	text-align: center;
+	
+}ul{list-style:none;
+	height: 76px;
+}blockquote,q{quotes:none}table,table td{border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding: 0;
+	border-collapse:collapse;
+	width: 689px;
+	text-align: left;
+}img{vertical-align:top;
+	width: 957px;
+	height: 302px;
+}embed{vertical-align:top}article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video{display:block}mark,rp,rt,ruby,summary,time{display:inline}
+
+body {font-family:Arial, Arial, Helvetica, sans-serif; font-size:12px; line-height:20px; color:#8e847c; min-width:980px; background:#ede9e8;}
+.main {width:960px;padding:0;margin:0 auto;
+	height: 131px;
+}
+
+/* Menu ==================== */
+nav{ position:relative; margin: 1px 0 14px 0;float:right;background: url(images/nav_bg.jpg) repeat-x #e1e3de;min-height:70px;border-radius:4px; line-height: 25px;}
+.sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.sf-menu ul li {width:100%}
+.sf-menu li {float:left;position:relative}
+
+.sf-menu>li>a{display:block;text-align:center;position:relative; font-size: 11px; color:#3c1e19 !important;font-weight:bold;padding: 27px 0 25px; font-size: 20px; font-family: 'Petit Formal Script', serif }
+.sf-menu>li>a:hover,.sf-menu>li.current>a,.sf-menu>li.sfHover>a{color:#fff !important;text-decoration:none;}
+
+.sf-menu>li{width:190px;background: url(images/nav_li.jpg) right 0 repeat-y;}
+.sf-menu>li:hover,.sf-menu>li.current,.sf-menu>li.sfHover{background: url(images/nav_li_h.jpg) 50% 0 repeat-x #200f0d;}
+
+.sf-menu a{}
+
+.sf-menu .f_item{border-radius:4px 0 0 4px;}
+.sf-menu .l_item{border-radius: 0 4px 4px 0;background:none;}
+
+/*================================>> 2 Level <<========================================*/
+.sf-menu li ul,.sf-menu li.sfHover ul{left:0;top:70px;width: 132px;padding:37px 9px 36px 9px; border-radius:5px; background: url(images/sub_ul.jpg) 0 bottom repeat-x #332220; z-index:99}
+.sf-menu li ul li{margin: 0 0;width:132px; background: url(images/sub_li.jpg) 0 -100px repeat-x; border-radius:5px;}
+.sf-menu li ul li a{font-size:11px;color:#fff !important;text-align:center;text-transform:uppercase;display:block;text-shadow: 0 1px 1px rgba(0,0,0,0.22);padding: 6px 0 6px;}
+.sf-menu li li a:hover, .sf-menu li.sfHover li.sfHover>a{text-decoration:none;}
+.sf-menu li li:hover, .sf-menu li.sfHover li.sfHover{background-position:0 0;background-color:#402720;}
+/*================================>> 3 Level <<========================================*/
+.sf-menu li li ul{left:142px !important;top:-34px !important; padding-top:34px !important;}
+
+
+/*********************************fonts*************************************/
+.reg {text-transform:uppercase}
+.f_left, .fleft{float:left}
+.f_right, .fright{float:right}
+.align_right, .alignright {text-align:right}
+.align_center , .aligncenter {text-align:center}
+
+.italic{font-style:italic}
+.letter {letter-spacing:-1px}
+
+/*********************************CLASSES**********************************/
+.m_bottom_zero{ margin-bottom:0 !important;}
+.m_left_zero{ margin-left:0 !important;}
+.p_bottom_zero{ padding-bottom:0 !important;}
+.p_left_zero{ padding-left:0 !important;}
+
+.clear {clear:both;width:100%;line-height:0;font-size:0;}
+.wrapper {width:100%;overflow:hidden}
+.extra_wrapper, .extra-wrap{ overflow:hidden;}
+.container{width:100%}
+.extra_last, .lst{ margin-bottom:0 !important; padding-bottom:0 !important;}
+.extra_last{ border:none !important; background:none !important;}
+.bg_none{ background:none !important;}
+
+/*==================================== Links ======================================================== */
+#pages a , footer a{color:#8e847c;outline:none; text-decoration:none; cursor:pointer;}
+#pages a:hover, footer a:hover{ color:#880000; text-decoration:none;}
+
+a.button1{ display:inline-block; padding:13px 49px 13px 25px; margin: 44px 0 0 0; font-size: 11px; line-height: 14px; color:#fff !important; text-transform:uppercase; font-weight:bold; border-radius:4px; background:url(images/button1.png) repeat-x #200f0d;box-shadow: 0 4px 4px #A09897;position:relative;}
+a.button1:after{display:block;width:23px;height:23px;position:absolute;background: url(images/button1_a.png) no-repeat;right:8px;top:9px;content:"";}
+a.button1:hover{ background:#3d2220;color:#fff;}
+
+/*================================>> hovers <<========================================*/
+.img_wrap2, .button1, .get_but, .offer .img_wrap, .img-pags li, #slider .banner .more:after, .more, .sf-menu li li{-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;}
+
+/*********************************Displays*************************************/
+.block{ display:block;}
+.inline-block{ display:inline-block;}
+/*================================>> Global Blocks <<========================================*/
+.block1{background: url(images/block1.jpg) 50% 0 no-repeat;border-bottom:9px solid #29130f;min-height: 269px;position:relative;z-index:10;
+	top: 2px;
+	left: -2px;
+}
+.h_750{height:750px;}
+
+.block2{background: url(images/block2.jpg) 50% 0 no-repeat #2e1c1a;padding: 31px 0 37px;}
+
+.block3{background:#f9f7f6;position:relative;z-index:1;}
+
+.block4{background: url(images/block4.jpg) repeat-x;}
+
+/*********************************header*************************************/
+
+header {margin: 0 5px 0; padding: 40px 0 0;}
+header h1{}
+header h1 a {display:block;width:164px;height:77px; text-decoration:none;}
+
+
+/*********************************content*************************************/
+#content {padding:42px 0px 48px 0px;}
+.cont_pad{padding:34px 0 48px 0 !important;}
+
+/*===============================>> Paragraphs <<=============================*/
+
+p {margin-bottom:20px}
+.p2{ margin-bottom:9px;}
+.p3{margin-bottom:12px;}
+.p4{margin-bottom:32px;}
+.p5{margin-bottom:25px;}
+.p6{}
+
+/*================================>> LISTS <<========================================*/
+.list1{}
+.list1 li{padding: 0 0 11px 0px;margin-bottom:8px;border-bottom:1px solid #e8e3e2;}
+.list1 a{}
+
+.list2{}
+.list2 li{ background:url(images/marker1.png) 0 4px no-repeat; padding-left:20px;margin-bottom:8px;}
+.list2 a{}
+
+/*================================>> H <<========================================*/
+/*  Header styles */
+h1,h2,h3,h4,h5,h6{line-height:1.3em;color:#474646;font-family: 'Petit Formal Script', serif;text-shadow:1px 1px rgba(68,43,38,0.36);font-weight:normal;}
+h1{font-size:40px;}
+h2{font-size:30px;}
+h3{font-size:30px;} 
+h4{font-size:27px;}     
+h5{font-size:25px;}
+h6{font-size:22px;}
+
+h2,h3,h4{ font-weight:normal;}
+h2.h2{font-size: 30px; line-height: 35px; color:#38211d; margin-bottom:20px;}
+
+h2.ind{ margin-bottom:26px;}
+h2.ind1{ margin-bottom:21px;}
+h2.ind2{ margin-bottom:px;}
+
+h3.h3{font-size: 16px; line-height: 20px; color:#38211d;text-transform:uppercase;letter-spacing:3px;}
+h3.ind{ margin-bottom:23px;}
+
+.b_bord{border-bottom:1px solid #e8e3e2;padding-bottom:54px;}
+.b_bord1{border-bottom:1px solid #e8e3e2;padding-bottom:44px;margin-bottom:39px;}
+
+/*================================>> GOOGLE FONTS  <<========================================*/
+.offer .title, .poly, .banner .title, .banner .title2, .more, .img-pags, .f_16{font-family: 'Petit Formal Script', serif;}
+
+/*********************************page_1*************************************/
+.ext_list>li, .ext_box{ overflow:hidden;}
+.ext_list>li>figure, .ext_box>figure{ float:left;}
+.ext_list>li>div, .ext_box>div{ float:right;}
+
+
+
+.shadow{background: url(images/shadow.png) 50% 0 no-repeat;}
+
+
+.more1{display:inline-block;font-weight:bold;text-transform:uppercase;color:#4e332c !important;font-size:11px;text-transform:uppercase;font-family:Arial, Arial, Helvetica, sans-serif;text-decoration:underline !important;margin-top:7px;}
+.more1:hover{text-decoration:none !important;}
+
+.str_box{margin-right:5px;border-right:1px solid #e8e3e2;padding-right:20px;}
+.str_box1{margin-right:5px;border-right:1px solid #e8e3e2;padding: 0 33px 17px 0;}
+
+.box1{padding: 59px 0 0 0;}
+
+
+
+.green{color:#880000;text-transform:uppercase;font-size:11px;}
+
+.links_box{padding: 59px 0 0 0;}
+
+
+
+/*********************************news*************************************/
+.l_news{}
+.l_news>li{margin-bottom:30px;}
+.l_news>li>div{width:441px;}
+.l_news>li>figure{padding:6px 0 0;}
+.l_news>li .f_16{margin-bottom:12px;}
+.f_16{font-size: 14px; line-height: 20px; color: #880000; font-weight: bold}
+
+/****************************footer************************/
+footer {padding:34px 5px 35px;overflow:hidden;line-height:20px;}
+.privacy{float:left;}
+footer .social{ overflow:hidden;float:right;letter-spacing:2px;margin: -3px 0 0 0;}
+footer .social a{ display:inline-block; margin-left:8px;font-size: 13px; color: #38211d !important;text-shadow:1px 1px rgba(68,43,38,0.36);text-transform:uppercase;background: url(images/social_str.jpg) left 5px no-repeat;padding-left:9px;}
+footer .social a:first-child{background:none;}
+footer .social a:hover{text-decoration:underline !important;}

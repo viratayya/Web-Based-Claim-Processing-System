@@ -1,0 +1,90 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="claim.aspx.cs" Inherits="claim" %>
+<%@ Register TagPrefix="header" TagName="menu"  Src="~/banner.ascx"  %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <style type="text/css">
+        .style1
+        {
+            height: 409px;
+        }
+        .style3
+        {
+            width: 115px;
+            height: 60px;
+        }
+        .style4
+        {
+            width: 225px;
+            height: 60px;
+        }
+        .style5
+        {
+            width: 114px;
+            height: 60px;
+        }
+        .style6
+        {
+            height: 10px;
+            width: 225px;
+        }
+        .style7
+        {
+            width: 225px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+           <table><tr><td><header:menu ID="banner" runat="server" /></td>
+         </tr>
+         <tr><td align="center" class="style1">
+             <table border="0" 
+                 style="width: 68%; height: 151px; z-index: 100; left: 155px; position: absolute; top: 571px;" 
+                 id="TABLE1">
+            <tr>
+               <td align="center"  valign="Middle"style="width: 37px; height: 8px; text-align: center;" colspan="3">
+                 <strong><span style="font-size: 16pt; color: #339966; text-align:center">&nbsp;NEW APPLICATION</span></strong>
+               </td>
+            </tr>
+            <tr>
+            <td align="right"style="height:32px; width: 167px;">CLAIM_NO:</td>
+            <td align="left" style="height:32px; width: 36px;"><asp:TextBox ID="claim_no" runat="server" Height="24px" Width="172px" TabIndex="1"></asp:TextBox>
+            </td>
+            <td  align="left"style="height: 32px; width: 942px;"><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="claim_no" ErrorMessage="Enter the no" Height="32px" Width="219px"></asp:RequiredFieldValidator></td></tr>
+            <tr><td align="right"style="height: 32px; width: 167px;">CLAIM TYPE:</td>
+            <td align="left" style="height: 32px; width: 36px;"><asp:DropDownList ID="DropDownList1" runat="server" Height="24px" Width="179px" TabIndex="2"></asp:DropDownList></td>
+            <td align="left" style="width: 942px; height: 32px;"></td></tr>
+            <tr><td align="right" style="height: 157px; width: 167px;">DATE OF CLAIM:</td>
+            <td  align="left"style="width: 36px; height: 157px;"><asp:TextBox ID="claim_date" runat="server" Height="24px" Width="149px"></asp:TextBox>
+                <asp:LinkButton ID="LinkButton1" runat="server" Style="z-index: 101; left: 264px;
+            position: absolute; top: 223px" Height="26px" Width="21px" OnClick="LinkButton1_Click">C</asp:LinkButton></td>
+            <td align="left" style="height: 157px; width: 942px;"><asp:Calendar ID="cal" runat="server" Height="202px" Width="279px" OnSelectionChanged="cal_SelectionChanged" Visible="False" BackColor="White" BorderColor="#3366CC" BorderWidth="1px" CellPadding="1" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="#003399">
+                <SelectedDayStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+                <SelectorStyle BackColor="#99CCCC" ForeColor="#336666" />
+                <WeekendDayStyle BackColor="#CCCCFF" />
+                <TodayDayStyle BackColor="#99CCCC" ForeColor="White" />
+                <OtherMonthDayStyle ForeColor="#999999" />
+                <NextPrevStyle Font-Size="8pt" ForeColor="#CCCCFF" />
+                <DayHeaderStyle BackColor="#99CCCC" ForeColor="#336666" Height="1px" />
+                <TitleStyle BackColor="#003399" BorderColor="#3366CC" BorderWidth="1px" Font-Bold="True"
+                    Font-Size="10pt" ForeColor="#CCCCFF" Height="25px" />
+            </asp:Calendar>
+             </td></tr>
+            <tr><td align="right" style="width: 167px; height: 32px;">
+                CLAIM_AMT:</td>
+            <td align="left" style="width: 36px; height: 32px;"><asp:TextBox ID="claim_amt" runat="server" Height="24px" Width="178px" TabIndex="4"></asp:TextBox></td>
+            <td style="height: 32px; width: 942px;"></td></tr>
+           
+            
+            <tr><td align="right" colspan="2"><asp:Button ID="ADD" runat="server" Text="ADD" OnClick="ADD_Click"></asp:Button></td>
+            <td align="left" colspan="2" style="width: 228px"><asp:Button ID="CANCEL" runat="server" Text="CANCEL" OnClick="CANCEL_Click" /></td></tr>
+            <tr><td align="center" colspan="3"><asp:Label ID="Label1" runat="server">LABEL1</asp:Label></td></tr>
+        </table></td></tr></table>
+    </div>
+    </form>
+</body>
+</html>
